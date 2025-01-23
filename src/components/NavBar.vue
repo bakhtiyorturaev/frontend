@@ -5,17 +5,17 @@
         <img src="../assets/logo.png" alt="">
       </div>
       <div class="nav-items">
-        <router-link to="/">Bosh Sahifa</router-link>
-        <router-link to="/">Ilmiy maktablarimiz</router-link>
-        <router-link to="/">Bog'lanish</router-link>
+        <router-link active-class="active-class" to="/">Bosh Sahifa</router-link>
+        <router-link active-class="active-class" to="/">Ilmiy maktablarimiz</router-link>
+        <router-link active-class="active-class" to="/">Bog'lanish</router-link>
         <input type="search" placeholder="Izlash">
       </div>
     </nav>
-    
+
     <div class="header">
       <p class="header-title">Jurnal</p>
-      <router-link to="/" class="active">Jurnal yangiliklari</router-link>
-      <router-link to="/about">Jurnal haqida</router-link>
+      <router-link active-class="active-class" to="/">Jurnal yangiliklari</router-link>
+      <router-link active-class="active-class" to="/about">Jurnal haqida</router-link>
       <a href="#">Jurnal talabalari</a>
       <a href="#">Arxiv</a>
       <a href="#">Statistika</a>
@@ -53,4 +53,10 @@
 
 </script>
 
-<style></style>
+<style>
+.active-class {
+  padding-left: 10px !important;
+  background: #c1c1c1a2;
+  color: #fff;
+}
+</style>

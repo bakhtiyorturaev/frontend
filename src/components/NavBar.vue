@@ -14,11 +14,11 @@
 
     <div class="header">
       <p class="header-title">Jurnal</p>
-      <router-link active-class="active-class" to="/">Jurnal yangiliklari</router-link>
-      <router-link active-class="active-class" to="/about">Jurnal haqida</router-link>
-      <a href="#">Jurnal talabalari</a>
-      <a href="#">Arxiv</a>
-      <a href="#">Statistika</a>
+      <router-link to="/" active-class="active-class-header">Jurnal yangiliklari</router-link>
+      <router-link to="/about" active-class="active-class-header">Jurnal haqida</router-link>
+      <router-link to="/no/page" active-class="active-class-header">Jurnal talabalari</router-link>
+      <router-link to="/no/page" active-class="active-class-header">Arxiv</router-link>
+      <router-link to="/no/page" active-class="active-class-header">Statistika</router-link>
       <p class="header-title">Mualliflarga</p>
       <a href="#">Maqola tayyorlash bo'yicha</a>
       <a href="#">Yo'riqnoma</a>
@@ -54,7 +54,7 @@
 </script>
 
 <style>
-.active-class {
+.active-class-header {
   padding-left: 10px !important;
   background: #c1c1c1a2;
   color: #fff;

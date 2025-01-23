@@ -126,12 +126,15 @@
   font-size: 30px;
   font-weight: bold;
   color: #507f9f;
+  padding: 13px 0;
 }
 .main-top-text p {
+  padding: 13px 0;
   font-weight: bold;
   color: #507f9f;
 }
 .main-top-text a {
+  padding: 13px 0;
   color: #507f9f;
   text-decoration: none;
   font-size: 16px;

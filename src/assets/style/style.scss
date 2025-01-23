@@ -148,7 +148,7 @@
             }
             
             & a {
-                padding: 13px 0;
+                padding: 10px 0;
                 color: #507f9f;
                 text-decoration: none;
                 font-size: 16px;
@@ -162,7 +162,7 @@
         font-style: italic;
         text-align: center;
         padding-top: 40px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         color: #507f9f;
     }
 
@@ -170,14 +170,17 @@
         padding: 20px;
         & h5 {
             text-transform: uppercase;
+            text-align: center;
             font-style: italic;
             color: #507f9f;
-            font-size: 16px;
-            padding: 20px 0;
+            font-size: 20px;
         }
 
         & p {
             font-style: italic;
+            text-indent: 20px;
+            padding-top: 20px;
+            text-align: justify;
         }
     }
 }

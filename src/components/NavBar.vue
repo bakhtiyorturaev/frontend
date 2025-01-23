@@ -11,11 +11,11 @@
         <input type="search" placeholder="Izlash">
       </div>
     </nav>
-
+    
     <div class="header">
       <p class="header-title">Jurnal</p>
-      <a href="#" class="active">Jurnal yangiliklari</a>
-      <a href="#">Jurnal haqida</a>
+      <router-link to="/" class="active">Jurnal yangiliklari</router-link>
+      <router-link to="/about">Jurnal haqida</router-link>
       <a href="#">Jurnal talabalari</a>
       <a href="#">Arxiv</a>
       <a href="#">Statistika</a>

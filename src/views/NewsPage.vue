@@ -5,11 +5,11 @@
                 Jurnal yangiliklari
             </h2>
             <div class="main-basic">
-                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, necessitatibus cumque doloribus
-                    asperiores minus quisquam quas quaerat eaque sed ea.</h5>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam quod nobis dolorem similique
-                    voluptatem, amet quo quasi culpa dignissimos minus saepe? Maxime accusantium sed commodi temporibus
-                    minus obcaecati atque sunt.</p>
+                <h5>“O‘ZBEKISTON STATISTIKA AXBOROTNOMASI” ILMIY-ELEKTRON JURNALIDA ILMIY MAQOLALARNI CHOP ETISH ENDI
+                    YANADA QULAY</h5>
+                <p>“O‘zbekiston statistika axborotnomasi” ilmiy-elektron jurnalida ilmiy maqolalarni chop etayotgan
+                    mualliflarga yanada qulaylik yaratish maqsadida to’lovlarni amalga oshirishda CLICK mobil ilovasidan
+                    foydalanish imkoniyati yaratildi.</p>
             </div>
         </div>
     </div>

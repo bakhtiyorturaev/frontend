@@ -134,7 +134,7 @@
   color: #507f9f;
 }
 .main-top-text a {
-  padding: 13px 0;
+  padding: 10px 0;
   color: #507f9f;
   text-decoration: none;
   font-size: 16px;
@@ -145,7 +145,7 @@
   font-style: italic;
   text-align: center;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   color: #507f9f;
 }
 .main-basic {
@@ -153,11 +153,14 @@
 }
 .main-basic h5 {
   text-transform: uppercase;
+  text-align: center;
   font-style: italic;
   color: #507f9f;
-  font-size: 16px;
-  padding: 20px 0;
+  font-size: 20px;
 }
 .main-basic p {
   font-style: italic;
+  text-indent: 20px;
+  padding-top: 20px;
+  text-align: justify;
 }/*# sourceMappingURL=style.css.map */

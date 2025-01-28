@@ -5,6 +5,21 @@
   font-family: sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #00add7;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #507f9f;
+}
+
 .nav {
   width: 100%;
   background: #00add7;
@@ -93,15 +108,16 @@
 .main {
   padding-left: 340px;
   padding-top: 10vh;
+  padding-bottom: 50px;
 }
 .main-top {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-around;
 }
 .main-top-img {
   width: 500px;
-  height: 600px;
+  height: auto;
   overflow: hidden;
   box-shadow: 1px 1px 20px 10px rgba(170, 170, 170, 0.3803921569);
 }
@@ -156,6 +172,7 @@
   text-align: center;
   font-style: italic;
   color: #507f9f;
+  padding-top: 35px;
   font-size: 20px;
 }
 .main-basic p {

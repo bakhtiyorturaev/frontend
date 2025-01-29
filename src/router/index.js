@@ -4,22 +4,27 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: () => import('../views/NewsPage.vue')
+    component: () => import('../views/journal/JournalNews.vue')
   },
   {
     path: '/about',
     name: 'about',
-    component: () => import('../views/AboutPage.vue')
+    component: () => import('../views/journal/JournalAbout.vue')
   },
   {
     path: '/requirments',
     name: 'requirments',
-    component: () => import('../views/JournalRequirments.vue')
+    component: () => import('../views/journal/JournalRequirments.vue')
   },
   {
     path: '/guide',
     name: 'guide',
-    component: () => import('../views/AuthorInstruction.vue')
+    component: () => import('../views/author/AuthorInstruction.vue')
+  },
+  {
+    path: '/staff',
+    name: 'staff',
+    component: () => import('../views/editorial/EditorialStaff.vue')
   },
 ]
 

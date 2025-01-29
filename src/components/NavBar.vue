@@ -25,7 +25,7 @@
       <router-link to="/no/page" active-class="active-class-header">Mualliflik huquqi</router-link>
       <p class="header-title">Tahririyat</p>
       <router-link to="/no/page" active-class="active-class-header">Tahririyat rahbariyati</router-link>
-      <router-link to="/no/page" active-class="active-class-header">Tahririyat a'zolari</router-link>
+      <router-link to="/staff" active-class="active-class-header">Tahririyat a'zolari</router-link>
       <router-link to="/no/page" active-class="active-class-header">Fahriy xorijiy tahririyat a'zolari</router-link>
       <router-link to="/no/page" active-class="active-class-header">Xorijiy tahririyat a'zolari</router-link>
     </div>
@@ -33,10 +33,10 @@
     <div class="main">
       <div class="main-top">
         <div class="main-top-img">
-          <img src="../assets/images/basic-img-1.jpg" alt="">
+          <img src="../assets/images/top-img-1.png" alt="">
         </div>
         <div class="main-top-img">
-          <img src="../assets/images/basic-img-2.jpg" alt="">
+          <img src="../assets/images/top-img-2.png" alt="">
         </div>
         <!-- <div class="main-top-text"> -->
         <!-- <h4>Ilmiy - elektron jurnal</h4> -->

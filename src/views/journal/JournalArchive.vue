@@ -2,15 +2,11 @@
     <div>
         <div class="main">
             <h2 class="main-title">
-                Tahririyat a'zolari
+                Arxiv
             </h2>
-            {{ members }}
-            <div v-if="members.length > 0">
-                <div class="main-member" v-for="(item, index) in members" :key="index">
-                    <img :src="item.image" alt="">
-                    <h3>{{ item.name }}</h3>
-                    <h4>{{ item.position_uz }}</h4>
-                    <p>{{ item.university_graduated_uz }}</p>
+            <div v-if="journal_archives.length > 0">
+                <div class="main-basic" v-for="(item, index) in journal_archives" :key="index">
+                    <h5>{{ item }}</h5>
                 </div>
             </div>
             <div v-else id="main-basic">
@@ -26,7 +22,7 @@ import axios from 'axios';
 export default {
     data() {
         return {
-            members: [],
+            journal_archives: [],
         };
     },
     mounted() {
@@ -35,9 +31,9 @@ export default {
     methods: {
         async getOrders() {
             try {
-                const response = await axios.get("http://back.tift-fintech.uz/en-gb/tahririyat/honorary-foreign-editorial-members");
+                const response = await axios.get("https://back.tift-fintech.uz/en-gb/jurnal/magazine-archives/");
 
-                this.members = response.data;
+                this.journal_archives = response.data;
             } catch (error) {
                 console.error("Xatolik yuz berdi:", error);
             }

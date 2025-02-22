@@ -2,9 +2,8 @@
     <div>
         <div class="main">
             <h2 class="main-title">
-                Tahririyat a'zolari
+                Fahriy xorijiy tahririyat a'zolari
             </h2>
-            {{ members }}
             <div v-if="members.length > 0">
                 <div class="main-member" v-for="(item, index) in members" :key="index">
                     <img :src="item.image" alt="">
@@ -35,7 +34,7 @@ export default {
     methods: {
         async getOrders() {
             try {
-                const response = await axios.get("http://back.tift-fintech.uz/en-gb/tahririyat/honorary-foreign-editorial-members");
+                const response = await axios.get("http://back.tift-fintech.uz/en-gb/tahririyat/foreign-editorial-members/");
 
                 this.members = response.data;
             } catch (error) {

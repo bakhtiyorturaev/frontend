@@ -17,14 +17,29 @@ const routes = [
     component: () => import('../views/journal/JournalRequirments.vue')
   },
   {
+    path: '/archive',
+    name: 'archive',
+    component: () => import('../views/journal/JournalArchive.vue')
+  },
+  {
+    path: '/statistics',
+    name: 'statistics',
+    component: () => import('../views/journal/JournalStatistics.vue')
+  },
+  {
     path: '/guide',
     name: 'guide',
-    component: () => import('../views/author/AuthorInstruction.vue')
+    component: () => import('../views/author/AuthorGuide.vue')
   },
   {
     path: '/staff',
     name: 'staff',
     component: () => import('../views/editorial/EditorialStaff.vue')
+  },
+  {
+    path: '/staff/foreign',
+    name: 'staff_foreign',
+    component: () => import('../views/editorial/ForeignStaff.vue')
   },
 ]
 

@@ -7,10 +7,8 @@
             {{ members }}
             <div v-if="members.length > 0">
                 <div class="main-member" v-for="(item, index) in members" :key="index">
-                    <img :src="item.image" alt="">
-                    <h3>{{ item.name }}</h3>
-                    <h4>{{ item.position_uz }}</h4>
-                    <p>{{ item.university_graduated_uz }}</p>
+                    <a :href="item.upload_file_uz"> ko'rish</a>
+                    <VueDocPreview :value="item.upload_file_uz" :type="docType" />
                 </div>
             </div>
             <div v-else id="main-basic">
@@ -22,8 +20,13 @@
 
 <script>
 import axios from 'axios';
+import VueDocPreview from 'vue-doc-preview'
+
 
 export default {
+    components: {
+        VueDocPreview
+    },
     data() {
         return {
             members: [],
@@ -35,7 +38,7 @@ export default {
     methods: {
         async getOrders() {
             try {
-                const response = await axios.get("http://back.tift-fintech.uz/en-gb/tahririyat/honorary-foreign-editorial-members");
+                const response = await axios.get("https://back.tift-fintech.uz/en-gb/muallif/article-preparation-guides/");
 
                 this.members = response.data;
             } catch (error) {

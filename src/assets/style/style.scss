@@ -188,10 +188,11 @@
 
     &-basic {
         padding: 20px;
+        width: 100%;
 
         & h5 {
             text-transform: uppercase;
-            text-align: center;
+            text-align: left;
             font-style: italic;
             color: #507f9f;
             padding-top: 35px;
@@ -204,7 +205,29 @@
             padding-top: 20px;
             text-align: justify;
         }
+
+        & img {
+            width: 300px;
+            margin: auto;
+            text-align: center;
+        }
     }
+
+    &-member {
+        padding-top: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        img {
+            width: 300px;
+            margin: auto;
+        }
+        h3{
+            font-size: 24px;
+        }
+    }
+
 }
 
 @media(max-width: 990px) {

@@ -2,10 +2,10 @@
     <div>
         <div class="main">
             <h2 class="main-title">
-                Jurnal yangiliklari
+                Statistika
             </h2>
-            <div v-if="journal_about.length > 0">
-                <div class="main-basic" v-for="(item, index) in journal_about" :key="index">
+            <div v-if="journal_statistics.length > 0">
+                <div class="main-basic" v-for="(item, index) in journal_statistics" :key="index">
                     <h5>{{ item.title_uz }}</h5>
                     <p>{{ item.content_uz }}</p>
                 </div>
@@ -23,7 +23,7 @@ import axios from 'axios';
 export default {
     data() {
         return {
-            journal_about: [],
+            journal_statistics: [],
         };
     },
     mounted() {
@@ -32,9 +32,9 @@ export default {
     methods: {
         async getAbout() {
             try {
-                const response = await axios.get("http://back.tift-fintech.uz/en-gb/jurnal/magazine-news/");
+                const response = await axios.get("http://back.tift-fintech.uz/en-gb/jurnal/statistics");
 
-                this.journal_about = response.data;
+                this.journal_statistics = response.data;
                 console.log(response.data);
             } catch (error) {
                 console.error("Xatolik yuz berdi:", error);

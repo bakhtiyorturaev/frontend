@@ -4,18 +4,40 @@
             <!-- <h2 class="main-title">
                 Jurnal haqida
             </h2> -->
-            <div class="main-basic">
-                <h5>«O‘zbekiston Statistika axborotnomasi» elektron jurnali haqida</h5>
-                <p>O‘zbekiston Respublikasi rejali iqtisodiy munosabatlar va maʼmuriy buyruqbozlik boshqaruvini rad etib, ijtimoiy yo‘naltirilgan bozor iqtisodiyotini tanlagan dastlabki kunlardan boshlab, milliy iqtisodiyotni ilmiy va innovatsion tadqiqot natijalariga tayangan holda olib borishga jiddiy kirishgan va bu jarayon jadal amalga oshirilmoqda. Mana shu yo‘nalishning o‘zi milliy iqtisodiyotga xizmat qilayotgan barcha tarmoq va sohalarda ilmiy tadqiqotlar asosida xulosalar chiqarib, o‘z navbatida chiqarilgan xulosalarga mos ravishda ishlab chiqilgan ilmiy taklif va tavsiyalarga tayanishni taqoza etadi. Chunki, ilmiy asoslarga tayanib ishlab chiqilgan birgina g‘oya yoki yangilikga asoslanib qabul qilingan qaror, o‘nlab tasodifan va ehtirosga berilib qabul kilingan qarorlardan ustunligi va samaradorligini bizgacha bosib o‘tgan amaliyot yorqin namoyon qilmoqda. Bekorga: «yetti o‘lchab bir kes» mazmunidagi xalq maqoli shakllanmagan.</p>
-                <p>Milliy iqtisodiyotni barqarorlashtirish va ijtimoiy farovonligini taʼminlashga xizmat qiladigan ilmiy–innovatsion g‘oyalar va yangiliklar o‘z-o‘zidan paydo bo‘lmaydi, albatta. Buning uchun mamlakatda soha va tarmoqlarga bevosita xizmat qiladigan, moddiy-texnika bazasi davr talabidan ortda qolmaydigan ilmiy tadqiqot institutlari faoliyat yuritishi lozim. Ammo, shuni alohida qayd etish lozimki, ilmiy tadqiqot institutlarida faoliyat yuritmay tarmoq va sohalarda amaliy faoliyat olib borayotgan xodimlarning ayrimlarida amaliyot jarayonida u yoki bu ko‘rinishdagi g‘oyalar va yangiliklar paydo bo‘ladi. Qaror topgan g‘oyalarni namoyon qilish, ommaga yetkazish uchun ularga nashr qilish imkoniyati bo‘lish kerak. Agar nashr etish obyekti bo‘lmasa, u g‘oya tez vaqtlar ichida so‘nib, foydalilik ehtimoli yo‘qoladi. Bunday nojoiz holatni oldini olish uchun ilmiy tadqiqot institutlari huzurida ilmiy g‘oyalarni keng muhokama qilish imkoniyatiga ega bo‘lgan nashr, yaʼni davriy jurnallarni chop etish zaruriyati tug‘iladi. Azaldan xalqimizda, «g‘oyadan - g‘oya tug‘iladi» mazmunidagi gap bejizga aytilmagan. Aksariyat hollarda kimdir o‘zining bir g‘oyasini davriy jurnal orqali olg‘a surib chop etsa, uni mutolaa qilgan ikkinchi bir o‘quvchi yoki mutaxassisda yangi bir g‘oya paydo bo‘lishiga turtki bo‘ladi! </p>
-                <p>Yuqoridagilardan kelib chiqqan holda, O‘zbekiston Respublikasi Prezidenti huzuridagi statistika agentligi Kadrlar malakasini oshirish va statistik tadqiqotlar institutida «O‘zbekiston Statistika axborotnomasi» nomli elektron jurnal (bundan buyon jurnal deyiladi)ni tashkil etish obyektiv zarurati tug‘ildi. Bizningcha, bu – davrning ham talabi.Aynan ushbu davriy jurnal orqali, Statistika agentligi va uning joylardagi mutaxassis xodimlari, institutda faoliyat yuritayotgan ilmiy xodim va professor-o‘qituvchilar, statistika sohasi bilan faoliyati bog‘liq bo‘lgan boshqa tarmoq va soha xodimlari, statistika sohasida tahsil olayotgan bakalavr, magistr va doktorantlar o‘z ilmiy g‘oya va yangiliklarini keng ommaga namoyon qilish, tahlil va tadqiq etish imkoniyatiga ega bo‘ladi. Jurnal elektron ko‘rinishda bo‘lgani uchun, undan internet tarmog‘idagi butun dunyo statistiklari va unga qiziquvchilar bahramand bo‘lishi mumkin. Sir emaski, hozirgi kunda davriy jurnallarda eʼlon qilinayotgan maqolalarda plagiyat (o‘zgalar ilmiy ijodini o‘zlashtirish) onda-sonda kuzatilmokda, elektron jurnal bunday salbiy illatga ham barham berishi muqarrar bo‘ladi. Eng zalvorlisi, mamlakatda xom-ashyo sifatida ishlab chiqarilmaydigan va faqat import qilinadigan qog‘ozga bo‘lgan ehtiyoj minimal darajada kamayadi!Shuningdek, O‘zbekiston Respublikasi Prezidenti huzuridagi statistika agentligi faoliyatini takomillashtirish chora-tadbirlari to‘g‘risidagi PQ-3165-sonli qarorida alohida: «statistik nashrlarga ko‘rsatkichlarni vizuallashtirishning ilg‘or usullarini joriy etish va tarqatilayotgan statistik maʼlumotlarni majburiy tartibda tahliliy va maʼlumotnoma materiallar bilan qo‘shib olib borishni taʼminlagan holda statistika organlarining tahliliy imkoniyatlarini mustahkamalash, ommaviy axborot vositalarida joylashtirish uchun dokladlar, press-relizlar va maqolalar chop etish» deb qayd etilgan. Shuni alohida qayd etish joizki, jurnalni tashkil etish va chop etish, bir vaqtning o‘zida, elektron jurnalni tashkil etish orqali, Prezident qarorini ham o‘z vaqtida ijro etish imkoniyatga ega bo‘ladi, shu jumladan, ilmiy faoliyat bilan shug‘ullanayotgan har bir tadqiqotchi va xodimlarga ham qulay imkoniyat tug‘iladi.Jurnalni dastlab, har chorakda bir marotaba chop etish, so‘ngra zarurat tug‘iladigan bo‘lsa, har ikki yoki bir oyda bir marotaba chop etish rejalashtiriladi.</p>
+            <div class="main-basic" v-for="(item, index) in journal_news" :key="index">
+                <h5>{{ item.magazine }}</h5>
+                <p v-html="item.bio_uz"></p>
             </div>
         </div>
     </div>
 </template>
 
 <script>
+import axios from 'axios';
 
+export default {
+    data() {
+        return {
+            journal_news: [],
+        };
+    },
+    mounted() {
+        this.getOrders();
+    },
+    methods: {
+        async getOrders() {
+            try {
+                const response = await axios.get("http://back.tift-fintech.uz/en-gb/jurnal/about-magazines/");
+
+                this.journal_news = response.data;
+                console.log(response.data);
+            } catch (error) {
+                console.error("Xatolik yuz berdi:", error);
+            }
+        },
+
+    }
+};
 </script>
 
 <style></style>

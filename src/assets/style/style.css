@@ -166,7 +166,7 @@
 }
 .main-basic {
   padding: 20px;
-  width: 100%;
+  width: 95%;
 }
 .main-basic h5 {
   text-transform: uppercase;
@@ -186,6 +186,13 @@
   width: 300px;
   margin: auto;
   text-align: center;
+}
+.main-basic ul li {
+  list-style: none;
+  font-style: italic;
+  text-indent: 20px;
+  padding-top: 20px;
+  text-align: justify;
 }
 .main-member {
   padding-top: 20px;

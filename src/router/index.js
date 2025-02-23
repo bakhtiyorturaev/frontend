@@ -41,6 +41,16 @@ const routes = [
     name: 'staff_foreign',
     component: () => import('../views/editorial/ForeignStaff.vue')
   },
+  {
+    path: '/make/document',
+    name: 'make_document',
+    component: () => import('../views/documents/MakeDocuments.vue')
+  },
+  {
+    path: '/simple/document',
+    name: 'simple_document',
+    component: () => import('../views/documents/SimpleDocuments.vue')
+  },
 ]
 
 const router = createRouter({

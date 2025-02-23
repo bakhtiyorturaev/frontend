@@ -6,7 +6,7 @@
             </h2>
             <div v-if="journal_archives.length > 0">
                 <div class="main-basic" v-for="(item, index) in journal_archives" :key="index">
-                    <h5>{{ item }}</h5>
+                    <!-- <h5>{{ item }}</h5> -->
                 </div>
             </div>
             <div v-else id="main-basic">

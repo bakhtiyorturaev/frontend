@@ -22,11 +22,11 @@
       <router-link to="/archive" active-class="active-class-header">Arxiv</router-link>
       <router-link to="/statistics" active-class="active-class-header">Statistika</router-link>
       <p class="header-title">Mualliflarga</p>
-      <router-link to="/guide" active-class="active-class-header">Maqola tayyorlash bo'yicha yo'riqnoma</router-link>
-      <router-link to="/no/page" active-class="active-class-header">Namunaviy hujjatlar</router-link>
+      <router-link to="/make/document" active-class="active-class-header">Maqola tayyorlash bo'yicha yo'riqnoma</router-link>
+      <router-link to="/simple/document" active-class="active-class-header">Namunaviy hujjatlar</router-link>
       <router-link to="/no/page" active-class="active-class-header">Mualliflik huquqi</router-link>
       <p class="header-title">Tahririyat</p>
-      <router-link to="/no/page" active-class="active-class-header">Tahririyat rahbariyati</router-link>
+      <router-link to="/guide" active-class="active-class-header">Tahririyat rahbariyati</router-link>
       <router-link to="/staff" active-class="active-class-header">Tahririyat a'zolari</router-link>
       <router-link to="/staff/foreign" active-class="active-class-header">Fahriy xorijiy tahririyat a'zolari</router-link>
       <router-link to="/no/page" active-class="active-class-header">Xorijiy tahririyat a'zolari</router-link>

@@ -188,7 +188,7 @@
 
     &-basic {
         padding: 20px;
-        width: 100%;
+        width: 95%;
 
         & h5 {
             text-transform: uppercase;
@@ -210,6 +210,13 @@
             width: 300px;
             margin: auto;
             text-align: center;
+        }
+        & ul li{
+            list-style: none;
+            font-style: italic;
+            text-indent: 20px;
+            padding-top: 20px;
+            text-align: justify;
         }
     }
 

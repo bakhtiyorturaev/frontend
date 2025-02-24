@@ -34,7 +34,7 @@ export default {
     methods: {
         async getOrders() {
             try {
-                const response = await axios.get("http://back.tift-fintech.uz/en-gb/tahririyat/foreign-editorial-members/");
+                const response = await axios.get("https://back.tift-fintech.uz/en-gb/tahririyat/foreign-editorial-members/");
 
                 this.members = response.data;
             } catch (error) {

@@ -68,7 +68,7 @@
             <p><strong>DIQQAT!</strong> O‘zgalarning ijodiy mahsuli o‘zlashtirilgan, ya’ni originalligi 70% dan kam
                 bo‘lgan plagiat maqolalar qabul qilinmaydi.</p>
 
-            <p>Qo‘shimcha ma’lumot uchun: <a href="http://www.fintech.uz" target="_blank">www.fintech.uz</a></p>
+            <p>Qo‘shimcha ma’lumot uchun: <a href="https://www.fintech.uz" target="_blank">www.fintech.uz</a></p>
 
             <h3>“Ruknlar-tematika”:</h3>
             <ul>

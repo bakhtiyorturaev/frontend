@@ -54,7 +54,7 @@
 
             <p><strong>ДИҚҚАТ!</strong> Плагиат мақолалар (70%дан кам оригиналлик) қабул қилинмайди.</p>
 
-            <p>Қўшимча маълумотлар учун: <a href="http://www.fintech.uz" target="_blank">www.fintech.uz</a></p>
+            <p>Қўшимча маълумотлар учун: <a href="https://www.fintech.uz" target="_blank">www.fintech.uz</a></p>
 
             <h3>“Рукнлар-тематика”:</h3>
             <ul>

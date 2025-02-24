@@ -32,7 +32,7 @@ export default {
     methods: {
         async getAbout() {
             try {
-                const response = await axios.get("http://back.tift-fintech.uz/en-gb/jurnal/magazine-news/");
+                const response = await axios.get("https://back.tift-fintech.uz/en-gb/jurnal/magazine-news/");
 
                 this.journal_about = response.data;
                 console.log(response.data);

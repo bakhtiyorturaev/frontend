@@ -27,7 +27,7 @@ export default {
     methods: {
         async getOrders() {
             try {
-                const response = await axios.get("http://back.tift-fintech.uz/en-gb/jurnal/journal-requirements");
+                const response = await axios.get("https://back.tift-fintech.uz/en-gb/jurnal/journal-requirements");
 
                 this.journal_req = response.data;
                 console.log(response.data);

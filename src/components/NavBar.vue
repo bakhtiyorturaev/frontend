@@ -30,13 +30,16 @@
       <router-link to="/statistics" active-class="active-class-header">{{ $t("statistics") }}</router-link>
       <p class="header-title">{{ $t("mualliflarga") }}</p>
       <router-link to="/make/document" active-class="active-class-header">{{ $t("yoriqnoma") }}</router-link>
-      <router-link to="/simple/document" active-class="active-class-header">{{ $t("namunaviy_hujjatlar") }}</router-link>
-      <router-link to="/copyright/document" active-class="active-class-header">{{ $t("mualliflik_huquqi") }}</router-link>
+      <router-link to="/simple/document" active-class="active-class-header">{{ $t("namunaviy_hujjatlar")
+        }}</router-link>
+      <router-link to="/copyright/document" active-class="active-class-header">{{ $t("mualliflik_huquqi")
+        }}</router-link>
       <p class="header-title">{{ $t("tahririyat") }}</p>
       <router-link to="/guide" active-class="active-class-header">{{ $t("tahririyat_rahbariyati") }}</router-link>
       <router-link to="/staff" active-class="active-class-header">{{ $t("tahririyat_azolari") }}</router-link>
       <router-link to="/staff/foreign" active-class="active-class-header">{{ $t("xorijiy_azolar") }}</router-link>
-      <router-link to="/honorary/foreign/editorial/members  " active-class="active-class-header">{{ $t("xorijiy_tahririyat_azolar") }}</router-link>
+      <router-link to="/honorary/foreign/editorial/members  " active-class="active-class-header">{{
+        $t("xorijiy_tahririyat_azolar") }}</router-link>
     </div>
 
     <div class="main">
@@ -56,10 +59,11 @@
 export default {
   data() {
     return {
-      lang: 'uz'
+      lang: localStorage.getItem('locale') | 'uz'
     };
   },
   mounted() {
+
   },
   methods: {
     changeLang() {

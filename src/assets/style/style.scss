@@ -202,6 +202,14 @@
             padding-top: 35px;
             font-size: 20px;
         }
+        & h4 {
+            text-transform: uppercase;
+            text-align: center;
+            font-style: italic;
+            color: #507f9f;
+            padding-top: 35px;
+            font-size: 20px;
+        }
 
         & p {
             font-style: italic;
@@ -238,6 +246,7 @@
         }
 
         & .table {
+            padding-top: 20px;
             display: flex;
             align-items: center;
             justify-content: center;

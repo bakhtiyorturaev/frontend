@@ -2,7 +2,9 @@
   <div>
     <nav class="nav">
       <div class="nav-logo">
-        <img src="../assets/logo.png" alt="">
+        <router-link to="/">
+          <img src="../assets/logo.png" alt="">
+        </router-link>
       </div>
       <div class="nav-items">
         <router-link active-class="active-class" to="/conference">Konferensiya</router-link>

@@ -6,13 +6,11 @@
                 <button @click="changeLang('ru')">RU</button>
                 <button @click="changeLang('en')">EN</button>
             </div> -->
-            <h2 class="main-title">
-                Bosh menyu
-            </h2>
-
-            <div v-if="datas.length > 0">
-                <div class="main-basic" v-for="(item, index) in datas" :key="index">
-                    <h1 class="main-basic-title">{{ item.magazine.which_number }}</h1>
+            
+            <div class="main-basic" v-if="datas.length > 0">
+                <h4>Bosh menyu</h4>
+                <div v-for="(item, index) in datas" :key="index">
+                    <h4 class="main-basic-title">{{ item.magazine.which_number }}</h4>
                     <div class="table">
                         <table>
                             <tr>

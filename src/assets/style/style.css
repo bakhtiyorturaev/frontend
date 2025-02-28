@@ -179,6 +179,14 @@
   padding-top: 35px;
   font-size: 20px;
 }
+.main-basic h4 {
+  text-transform: uppercase;
+  text-align: center;
+  font-style: italic;
+  color: #507f9f;
+  padding-top: 35px;
+  font-size: 20px;
+}
 .main-basic p {
   font-style: italic;
   text-indent: 20px;
@@ -210,6 +218,7 @@
   font-size: 20px;
 }
 .main-basic .table {
+  padding-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;

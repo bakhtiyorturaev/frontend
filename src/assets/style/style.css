@@ -44,6 +44,18 @@
   justify-content: center;
   gap: 10px;
 }
+.nav-items select {
+  background: none;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+}
+.nav-items option {
+  background: #fff;
+  color: #000;
+}
 .nav-items a {
   padding: 20px;
   text-decoration: none;

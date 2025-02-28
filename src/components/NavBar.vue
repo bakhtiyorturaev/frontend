@@ -59,7 +59,7 @@
 export default {
   data() {
     return {
-      lang: localStorage.getItem('locale') | 'uz'
+      lang: localStorage.getItem('locale') || 'uz'
     };
   },
   mounted() {

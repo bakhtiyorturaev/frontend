@@ -7,31 +7,36 @@
         </router-link>
       </div>
       <div class="nav-items">
-        <router-link active-class="active-class" to="/conference">Konferensiya</router-link>
-        <router-link active-class="active-class" to="/">Bosh Sahifa</router-link>
-        <router-link active-class="active-class" to="/">Ilmiy maktablarimiz</router-link>
-        <router-link active-class="active-class" to="/">Bog'lanish</router-link>
+        <router-link active-class="active-class" to="/conference">{{ $t("conference") }}</router-link>
+        <router-link active-class="active-class" to="/">{{ $t("home_page") }}</router-link>
+        <router-link active-class="active-class" to="/">{{ $t("ilmiy_school") }}</router-link>
+        <router-link active-class="active-class" to="/">{{ $t("contact") }}</router-link>
+        <select name="lang" id="" @change="changeLang" v-model="lang">
+          <option value="uz">UZ</option>
+          <option value="ru">RU</option>
+          <option value="en">EN</option>
+        </select>
       </div>
     </nav>
 
-    
+
 
     <div class="header">
-      <p class="header-title">Jurnal</p>
-      <router-link to="/journal/news" active-class="active-class-header">Jurnal yangiliklari</router-link>
-      <router-link to="/about" active-class="active-class-header">Jurnal haqida</router-link>
-      <router-link to="/requirments" active-class="active-class-header">Jurnal talablari</router-link>
-      <router-link to="/archive" active-class="active-class-header">Arxiv</router-link>
-      <router-link to="/statistics" active-class="active-class-header">Statistika</router-link>
-      <p class="header-title">Mualliflarga</p>
-      <router-link to="/make/document" active-class="active-class-header">Maqola tayyorlash bo'yicha yo'riqnoma</router-link>
-      <router-link to="/simple/document" active-class="active-class-header">Namunaviy hujjatlar</router-link>
-      <router-link to="/copyright/document" active-class="active-class-header">Mualliflik huquqi</router-link>
-      <p class="header-title">Tahririyat</p>
-      <router-link to="/guide" active-class="active-class-header">Tahririyat rahbariyati</router-link>
-      <router-link to="/staff" active-class="active-class-header">Tahririyat a'zolari</router-link>
-      <router-link to="/staff/foreign" active-class="active-class-header">Fahriy xorijiy tahririyat a'zolari</router-link>
-      <router-link to="/honorary/foreign/editorial/members  " active-class="active-class-header">Xorijiy tahririyat a'zolari</router-link>
+      <p class="header-title">{{ $t("journal") }}</p>
+      <router-link to="/journal/news" active-class="active-class-header">{{ $t("journal_news") }}</router-link>
+      <router-link to="/about" active-class="active-class-header">{{ $t("journal_about") }}</router-link>
+      <router-link to="/requirments" active-class="active-class-header">{{ $t("journal_talablari") }}</router-link>
+      <router-link to="/archive" active-class="active-class-header">{{ $t("archive") }}</router-link>
+      <router-link to="/statistics" active-class="active-class-header">{{ $t("statistics") }}</router-link>
+      <p class="header-title">{{ $t("mualliflarga") }}</p>
+      <router-link to="/make/document" active-class="active-class-header">{{ $t("yoriqnoma") }}</router-link>
+      <router-link to="/simple/document" active-class="active-class-header">{{ $t("namunaviy_hujjatlar") }}</router-link>
+      <router-link to="/copyright/document" active-class="active-class-header">{{ $t("mualliflik_huquqi") }}</router-link>
+      <p class="header-title">{{ $t("tahririyat") }}</p>
+      <router-link to="/guide" active-class="active-class-header">{{ $t("tahririyat_rahbariyati") }}</router-link>
+      <router-link to="/staff" active-class="active-class-header">{{ $t("tahririyat_azolari") }}</router-link>
+      <router-link to="/staff/foreign" active-class="active-class-header">{{ $t("xorijiy_azolar") }}</router-link>
+      <router-link to="/honorary/foreign/editorial/members  " active-class="active-class-header">{{ $t("xorijiy_tahririyat_azolar") }}</router-link>
     </div>
 
     <div class="main">
@@ -42,21 +47,27 @@
         <div class="main-top-img">
           <img src="../assets/images/top-img-2.png" alt="">
         </div>
-        <!-- <div class="main-top-text"> -->
-        <!-- <h4>Ilmiy - elektron jurnal</h4> -->
-        <!-- <p>08.00.00 - Iqtisodiyot yo'nalishida</p> -->
-        <!-- <p>OAK ro'yxatida</p> -->
-        <!-- <p>2024-yil, 4-son</p> -->
-        <!-- <p>Maqolalar soni - 16 ta</p> -->
-        <!-- <a href="#">Jurnal yangi sonining to'liq shaklini yuklab olish</a> -->
-        <!-- </div> -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
-
+export default {
+  data() {
+    return {
+      lang: 'uz'
+    };
+  },
+  mounted() {
+  },
+  methods: {
+    changeLang() {
+      this.$i18n.locale = this.lang;
+      localStorage.setItem("locale", this.lang);
+    },
+  }
+}
 </script>
 
 <style>

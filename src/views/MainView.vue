@@ -1,12 +1,6 @@
 <template>
     <div>
         <div class="main">
-            <!-- <div>
-                <button @click="changeLang('uz')">UZ</button>
-                <button @click="changeLang('ru')">RU</button>
-                <button @click="changeLang('en')">EN</button>
-            </div> -->
-            
             <div class="main-basic" v-if="datas.length > 0">
                 <h4>Bosh menyu</h4>
                 <div v-for="(item, index) in datas" :key="index">

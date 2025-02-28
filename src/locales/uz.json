@@ -1,5 +1,21 @@
 {
-    "welcome": "Xush kelibsiz!",
-    "login": "Kirish",
-    "logout": "Chiqish"
+    "journal": "Jurnal",
+    "journal_news": "Jurnal yangiliklari",
+    "journal_about": "Jurnal haqida",
+    "journal_talablari": "Jurnal talablari",
+    "archive": "Arxiv",
+    "statistics": "Statistika",
+    "mualliflarga": "Mualliflarga",
+    "yoriqnoma": "Maqola tayyorlash bo'yicha yo'riqnoma",
+    "namunaviy_hujjatlar": "Namunaviy hujjatlar",
+    "mualliflik_huquqi": "Mualliflik huquqi",
+    "tahririyat": "Tahririyat",
+    "tahririyat_rahbariyati": "Tahririyat rahbariyati",
+    "tahririyat_azolari": "Tahririyat a'zolari",
+    "xorijiy_azolar": "Fahriy xorijiy tahririyat a'zolari",
+    "xorijiy_tahririyat_azolar": "Xorijiy tahririyat a'zolari",
+    "conference": "Konferensiya",
+    "home_page": "Bosh sahifa",
+    "ilmiy_school": "Ilmiy maktablarimiz",
+    "contact": "Bog'lanish"
 }

@@ -1,6 +1,21 @@
 {
-    "welcome": "Welcome!",
-    "login": "Login",
-    "logout": "Logout"
-  }
-  
+    "journal": "Journal",
+    "journal_news": "Journal News",
+    "journal_about": "About the Journal",
+    "journal_talablari": "Journal Requirements",
+    "archive": "Archive",
+    "statistics": "Statistics",
+    "mualliflarga": "For Authors",
+    "yoriqnoma": "Article Preparation Guidelines",
+    "namunaviy_hujjatlar": "Sample Documents",
+    "mualliflik_huquqi": "Copyright",
+    "tahririyat": "Editorial Board",
+    "tahririyat_rahbariyati": "Editorial Leadership",
+    "tahririyat_azolari": "Editorial Members",
+    "xorijiy_azolar": "Honorary Foreign Editorial Members",
+    "xorijiy_tahririyat_azolar": "Foreign Editorial Members",
+    "conference": "Conference",
+    "home_page": "Home Page",
+    "ilmiy_school": "Our Scientific Schools",
+    "contact": "Contact"
+}

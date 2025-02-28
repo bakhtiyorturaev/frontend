@@ -1,5 +1,21 @@
 {
-    "welcome": "Добро пожаловать!",
-    "login": "Войти",
-    "logout": "Выйти"
+    "journal": "Журнал",
+    "journal_news": "Новости журнала",
+    "journal_about": "О журнале",
+    "journal_talablari": "Требования журнала",
+    "archive": "Архив",
+    "statistics": "Статистика",
+    "mualliflarga": "Авторам",
+    "yoriqnoma": "Руководство по подготовке статьи",
+    "namunaviy_hujjatlar": "Образцы документов",
+    "mualliflik_huquqi": "Авторское право",
+    "tahririyat": "Редакция",
+    "tahririyat_rahbariyati": "Руководство редакции",
+    "tahririyat_azolari": "Члены редакции",
+    "xorijiy_azolar": "Почётные иностранные члены редакции",
+    "xorijiy_tahririyat_azolar": "Иностранные члены редакции",
+    "conference": "Конференция",
+    "home_page": "Главная страница",
+    "ilmiy_school": "Наши научные школы",
+    "contact": "Контакты"
 }

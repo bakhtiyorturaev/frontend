@@ -57,6 +57,9 @@
 .nav-items a:nth-child(2) {
   border-left: 1px solid #fff;
 }
+.nav-items a:nth-child(3) {
+  border-left: 1px solid #fff;
+}
 .nav-items input {
   border-radius: 4px;
   padding: 6px 8px;
@@ -194,6 +197,24 @@
   padding-top: 20px;
   text-align: justify;
 }
+.main-basic table,
+.main-basic th,
+.main-basic td,
+.main-basic tr {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  padding: 5px 15px;
+  text-align: center;
+  color: #00add7;
+  font-style: italic;
+  font-size: 20px;
+}
+.main-basic .table {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
 .main-member {
   padding-top: 20px;
   display: flex;
@@ -207,6 +228,14 @@
 }
 .main-member h3 {
   font-size: 24px;
+  text-align: center;
+  color: #507f9f;
+  font-style: italic;
+}
+.main-member p {
+  text-align: center;
+  color: #507f9f;
+  font-style: italic;
 }
 
 @media (max-width: 990px) {

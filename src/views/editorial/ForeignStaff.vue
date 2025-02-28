@@ -37,6 +37,8 @@ export default {
                 const response = await axios.get("https://back.tift-fintech.uz/en-gb/tahririyat/foreign-editorial-members/");
 
                 this.members = response.data;
+                console.log(response.data);
+                
             } catch (error) {
                 console.error("Xatolik yuz berdi:", error);
             }

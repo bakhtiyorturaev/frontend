@@ -63,6 +63,10 @@
             &:nth-child(2) {
                 border-left: 1px solid #fff;
             }
+
+            &:nth-child(3) {
+                border-left: 1px solid #fff;
+            }
         }
 
         & input {
@@ -211,12 +215,33 @@
             margin: auto;
             text-align: center;
         }
-        & ul li{
+
+        & ul li {
             list-style: none;
             font-style: italic;
             text-indent: 20px;
             padding-top: 20px;
             text-align: justify;
+        }
+
+        & table,
+        th,
+        td,
+        tr {
+            border: 1px solid #000;
+            border-collapse: collapse;
+            padding: 5px 15px;
+            text-align: center;
+            color: #00add7;
+            font-style: italic;
+            font-size: 20px;
+        }
+
+        & .table {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
         }
     }
 
@@ -226,15 +251,25 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+
         img {
             width: 300px;
             margin: auto;
         }
-        h3{
+
+        h3 {
             font-size: 24px;
+            text-align: center;
+            color: #507f9f;
+            font-style: italic;
+        }
+
+        p {
+            text-align: center;
+            color: #507f9f;
+            font-style: italic;
         }
     }
-
 }
 
 @media(max-width: 990px) {

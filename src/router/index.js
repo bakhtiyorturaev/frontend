@@ -4,6 +4,11 @@ const routes = [
   {
     path: '/',
     name: 'home',
+    component: () => import('../views/MainView.vue')
+  },
+  {
+    path: '/journal/news',
+    name: 'journal_news',
     component: () => import('../views/journal/JournalNews.vue')
   },
   {
@@ -42,6 +47,11 @@ const routes = [
     component: () => import('../views/editorial/ForeignStaff.vue')
   },
   {
+    path: '/honorary/foreign/editorial/members',
+    name: 'honorary_foreign_editorial_members',
+    component: () => import('../views/editorial/HonoraryForeignEditorialMembers.vue')
+  },
+  {
     path: '/make/document',
     name: 'make_document',
     component: () => import('../views/documents/MakeDocuments.vue')
@@ -50,6 +60,16 @@ const routes = [
     path: '/simple/document',
     name: 'simple_document',
     component: () => import('../views/documents/SimpleDocuments.vue')
+  },
+  {
+    path: '/copyright/document',
+    name: 'copyright_document',
+    component: () => import('../views/documents/CopyrightDoc.vue')
+  },
+  {
+    path: '/conference',
+    name: 'conference',
+    component: () => import('../views/conference/ConferenceView.vue')
   },
 ]
 

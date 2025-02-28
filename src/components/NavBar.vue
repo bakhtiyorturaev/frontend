@@ -5,10 +5,10 @@
         <img src="../assets/logo.png" alt="">
       </div>
       <div class="nav-items">
+        <router-link active-class="active-class" to="/conference">Konferensiya</router-link>
         <router-link active-class="active-class" to="/">Bosh Sahifa</router-link>
         <router-link active-class="active-class" to="/">Ilmiy maktablarimiz</router-link>
         <router-link active-class="active-class" to="/">Bog'lanish</router-link>
-        <input type="search" placeholder="Izlash">
       </div>
     </nav>
 
@@ -16,7 +16,7 @@
 
     <div class="header">
       <p class="header-title">Jurnal</p>
-      <router-link to="/" active-class="active-class-header">Jurnal yangiliklari</router-link>
+      <router-link to="/journal/news" active-class="active-class-header">Jurnal yangiliklari</router-link>
       <router-link to="/about" active-class="active-class-header">Jurnal haqida</router-link>
       <router-link to="/requirments" active-class="active-class-header">Jurnal talablari</router-link>
       <router-link to="/archive" active-class="active-class-header">Arxiv</router-link>
@@ -24,12 +24,12 @@
       <p class="header-title">Mualliflarga</p>
       <router-link to="/make/document" active-class="active-class-header">Maqola tayyorlash bo'yicha yo'riqnoma</router-link>
       <router-link to="/simple/document" active-class="active-class-header">Namunaviy hujjatlar</router-link>
-      <router-link to="/no/page" active-class="active-class-header">Mualliflik huquqi</router-link>
+      <router-link to="/copyright/document" active-class="active-class-header">Mualliflik huquqi</router-link>
       <p class="header-title">Tahririyat</p>
       <router-link to="/guide" active-class="active-class-header">Tahririyat rahbariyati</router-link>
       <router-link to="/staff" active-class="active-class-header">Tahririyat a'zolari</router-link>
       <router-link to="/staff/foreign" active-class="active-class-header">Fahriy xorijiy tahririyat a'zolari</router-link>
-      <router-link to="/no/page" active-class="active-class-header">Xorijiy tahririyat a'zolari</router-link>
+      <router-link to="/honorary/foreign/editorial/members  " active-class="active-class-header">Xorijiy tahririyat a'zolari</router-link>
     </div>
 
     <div class="main">

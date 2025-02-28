@@ -14,7 +14,7 @@
                 <h3 style="color: red; text-align: center;">Mavjud emas</h3>
             </div>
         </div>
-    </div>
+    </div>Konferensiyaga ro‘yxatdan o‘tish havolasi
 </template>
 
 <script>

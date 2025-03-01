@@ -5,15 +5,15 @@
                 {{ $t("statistics") }}
             </h2>
             <h2 class="main-title">
-                Jurnalning sonlari bo‘yicha maqolalar
+                {{ $t("jurnal_soni_maqola") }}
             </h2>
             <div class="main-basic" v-if="journal_statistics.length > 0">
                 <div class="table">
                     <table>
                         <tr>
-                            <th>T/r.</th>
-                            <th>Jurnalning soni</th>
-                            <th>Maqolalar soni</th>
+                            <th>{{ $t("tr") }}</th>
+                            <th>{{ $t("jurnal_soni") }}</th>
+                            <th>{{ $t("maqolalar_soni") }}</th>
                         </tr>
                         <tr v-for="(item, index) in journal_statistics" :key="index">
                             <td>{{ index + 1 }}</td>
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <div v-else id="main-basic">
-                <h3 style="color: red; text-align: center;">Mavjud emas</h3>
+                <h3 style="color: red; text-align: center;">{{ $t("mavjud_emas") }}</h3>
             </div>
         </div>
     </div>

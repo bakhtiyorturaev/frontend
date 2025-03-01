@@ -2,24 +2,24 @@
     <div>
         <div class="main">
             <div class="main-basic" v-if="datas.length > 0">
-                <h4>Bosh menyu</h4>
+                <h4>{{ $t("home_page") }}</h4>
                 <div v-for="(item, index) in transformList(datas)" :key="index">
                     <h4 class="main-basic-title">{{ item?.magazine?.which_number }}</h4>
                     <div class="table">
                         <table>
                             <tr>
-                                <th>Maqolaning nomi</th>
-                                <th>Yuklab olish</th>
+                                <th>{{ $t("maqola_name") }}</th>
+                                <th>{{ $t("download") }}</th>
                             </tr>
                             <tr>
                                 <td>{{ item.name }}</td>
                                 <td>
                                     <a :href="item.upload_file" target="_blank" download>
-                                        <button class="btn_download">Yuklab olish</button>
+                                        <button class="btn_download">{{ $t("download") }}</button>
                                     </a>
                                     <br>
                                     <a :href="item.upload_file" target="_blank">
-                                        <button class="btn_view">Ochib ko'rish</button>
+                                        <button class="btn_view">{{ $t("view") }}</button>
                                     </a>
                                 </td>
                             </tr>
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div v-else id="main-basic">
-                <h3 style="color: red; text-align: center;">Mavjud emas</h3>
+                <h3 style="color: red; text-align: center;">{{ $t("mavjud_emas") }}</h3>
             </div>
         </div>
     </div>

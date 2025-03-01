@@ -12,19 +12,20 @@
                         {{ category.name }}
                         <table v-if="category.articles.length > 0">
                             <tr>
-                                <th>Maqola nomi</th>
-                                <th>Muallif FISH</th>
-                                <th>Yuklab olish</th>
+                                <th>{{ $t("maqola_name") }}</th>
+                                <th>{{ $t("muallif") }}</th>
+                                <th>{{ $t("download") }}</th>
                             </tr>
                             <tr v-for="(article, index) in transformList(category.articles)" :key="index">
                                 <td>{{ article.name }}</td>
                                 <td>{{ article.author.name }}</td>
                                 <td>
-                                    <button @click="downloadFile(article.upload_file)" class="btn_download">Yuklab
-                                        olish</button>
+                                    <button @click="downloadFile(article.upload_file)" class="btn_download">
+                                        {{ $t("download") }}
+                                    </button>
                                     <br>
                                     <a :href="article.upload_file" target="_blank">
-                                        <button class="btn_view">Ochib ko'rish</button>
+                                        <button class="btn_view">{{ $t("view") }}</button>
                                     </a>
                                 </td>
                             </tr>
@@ -52,7 +53,7 @@ export default {
         downloadFile(upload_file) {
             const link = document.createElement("a");
             link.href = upload_file;
-            link.setAttribute("download", ""); // Fayl yuklab olish uchun
+            link.setAttribute("download", ""); // Fayl {{ $t("download") }} uchun
             link.style.display = "none";
             document.body.appendChild(link);
             link.click();

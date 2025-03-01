@@ -2,7 +2,7 @@
     <div>
         <div class="main">
             <h2 class="main-title">
-                Ilmiy maktablarimiz
+                {{ $t("ilmiy_school") }}
             </h2>
             <div class="main-basic" v-if="datas.length > 0">
                 <div v-for="(item, index) in transformList(datas)" :key="index">
@@ -12,7 +12,7 @@
                 </div>
             </div>
             <div v-else id="main-basic">
-                <h3 style="color: red; text-align: center;">Mavjud emas</h3>
+                <h3 style="color: red; text-align: center;">{{ $t("mavjud_emas") }}</h3>
             </div>
         </div>
     </div>

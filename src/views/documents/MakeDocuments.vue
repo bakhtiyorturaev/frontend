@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div v-else id="main-basic">
-                <h3 style="color: red; text-align: center;">Mavjud emas</h3>
+                <h3 style="color: red; text-align: center;">{{ $t("mavjud_emas") }}</h3>
             </div>
         </div>
     </div>

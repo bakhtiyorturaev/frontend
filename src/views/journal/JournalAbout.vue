@@ -3,7 +3,7 @@
         <div class="main">
             <div class="main-basic" v-for="(item, index) in transformList(datas)" :key="index">
                 <h5>{{ item.magazine.name_uz }}</h5>
-                <a :href="item.file" target="_blank">Guvohnomani yuklab ko'rish</a>
+                <a :href="item.file" target="_blank">{{ $t("view") }}</a>
                 <p v-html="item.bio_uz"></p>
             </div>
         </div>

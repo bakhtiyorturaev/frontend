@@ -19,5 +19,14 @@
     "ilmiy_school": "Наши научные школы",
     "contact": "Контакты",
     "archive_detail": "Архив информации",
-    "namunaviy_docs": "Образцы документов"
+    "namunaviy_docs": "Образцы документов",
+    "download": "Скачать",
+    "maqola_name": "Название статьи",
+    "muallif": "Автор",
+    "mavjud_emas": "Нет в наличии",
+    "view": "Открытый вид",
+    "jurnal_soni_maqola": "Статьи по выпускам журнала",
+    "tr": "№",
+    "jurnal_soni": "Выпуск журнала",
+    "maqolalar_soni": "Количество статей"
 }

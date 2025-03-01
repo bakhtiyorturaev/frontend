@@ -19,5 +19,14 @@
     "ilmiy_school": "Ilmiy maktablarimiz",
     "contact": "Bog'lanish",
     "archive_detail": "Arxiv ma'lumotlari",
-    "namunaviy_docs": "Na'munaviy hujjatlar"
+    "namunaviy_docs": "Na'munaviy hujjatlar",
+    "download": "Yuklab olish",
+    "maqola_name": "Maqola nomi",
+    "muallif": "Muallif",
+    "mavjud_emas": "Mavjud emas",
+    "view": "Ochib ko'rish",
+    "jurnal_soni_maqola": "Jurnalning sonlari bo‘yicha maqolalar",
+    "tr": "T/R",
+    "jurnal_soni": "Jurnalning soni",
+    "maqolalar_soni": "Maqolalar soni"
 }

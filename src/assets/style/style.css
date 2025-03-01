@@ -14,7 +14,7 @@
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-  background: #00add7;
+  background: #1a2537;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #507f9f;
@@ -22,7 +22,7 @@
 
 .nav {
   width: 100%;
-  background: #00add7;
+  background: #1a2537;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -60,7 +60,7 @@
   padding: 20px;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 16px;
   color: #fff;
 }
 .nav-items a:nth-child(1) {
@@ -81,7 +81,7 @@
 
 .header {
   border-top: 1px solid #fff;
-  background: #00add7;
+  background: #1a2537;
   padding: 10px;
   margin-top: 8vh;
   height: 92vh;
@@ -94,7 +94,7 @@
   padding-top: 15px;
   padding-bottom: 5px;
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   text-transform: uppercase;
   margin: 0;
   border-bottom: 2px solid #fff;
@@ -106,7 +106,7 @@
   display: block;
   border-bottom: 1px dotted #fff;
   padding: 7px 2px;
-  font-size: 16px;
+  font-size: 18px;
   transition: 0.2s;
 }
 .header a.active {
@@ -154,7 +154,7 @@
   box-shadow: 1px 1px 20px 10px rgba(170, 170, 170, 0.3803921569);
 }
 .main-top-text h4 {
-  font-size: 30px;
+  font-size: 32px;
   font-weight: bold;
   color: #507f9f;
   padding: 13px 0;
@@ -168,7 +168,7 @@
   padding: 10px 0;
   color: #507f9f;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 18px;
   font-style: italic;
   font-weight: bold;
 }
@@ -189,7 +189,7 @@
   font-style: italic;
   color: #507f9f;
   padding-top: 35px;
-  font-size: 20px;
+  font-size: 22px;
 }
 .main-basic h4 {
   text-transform: uppercase;
@@ -197,7 +197,7 @@
   font-style: italic;
   color: #507f9f;
   padding-top: 35px;
-  font-size: 20px;
+  font-size: 22px;
 }
 .main-basic p {
   font-style: italic;
@@ -225,9 +225,9 @@
   border-collapse: collapse;
   padding: 5px 15px;
   text-align: center;
-  color: #00add7;
+  color: #1a2537;
   font-style: italic;
-  font-size: 20px;
+  font-size: 22px;
 }
 .main-basic .table {
   padding-top: 20px;
@@ -248,7 +248,7 @@
   margin: auto;
 }
 .main-member h3 {
-  font-size: 24px;
+  font-size: 26px;
   text-align: center;
   color: #507f9f;
   font-style: italic;
@@ -262,7 +262,7 @@
 @media (max-width: 990px) {
   .nav {
     width: 100%;
-    background: #00add7;
+    background: #1a2537;
     display: flex;
     align-items: start;
     justify-content: space-between;
@@ -296,7 +296,7 @@
     padding: 10px 20px;
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 16px;
     color: #fff;
   }
   .nav-items a:nth-child(1) {
@@ -316,7 +316,7 @@
   }
   .header {
     border-top: 1px solid #fff;
-    background: #00add7;
+    background: #1a2537;
     padding: 0;
     margin-top: 0vh;
     height: auto;
@@ -328,7 +328,7 @@
   .header-title {
     padding: 15px 10px 5px 10px;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     text-transform: uppercase;
     margin: 0;
     border-bottom: 2px solid #fff;
@@ -340,7 +340,7 @@
     display: block;
     border-bottom: 1px dotted #fff;
     padding: 7px 10px;
-    font-size: 16px;
+    font-size: 18px;
     transition: 0.2s;
   }
   .header a.active {
@@ -389,7 +389,7 @@
     box-shadow: 1px 1px 20px 10px rgba(170, 170, 170, 0.3803921569);
   }
   .main-top-text h4 {
-    font-size: 30px;
+    font-size: 32px;
     font-weight: bold;
     color: #507f9f;
     padding: 13px 0;
@@ -403,7 +403,7 @@
     padding: 10px 0;
     color: #507f9f;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     font-style: italic;
     font-weight: bold;
   }
@@ -423,7 +423,7 @@
     font-style: italic;
     color: #507f9f;
     padding-top: 35px;
-    font-size: 20px;
+    font-size: 22px;
   }
   .main-basic p {
     font-style: italic;

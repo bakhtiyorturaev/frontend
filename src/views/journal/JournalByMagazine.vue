@@ -6,17 +6,28 @@
             </h2>
             <div>
                 <div class="main-basic">
-                    <h5>{{ transformList(datas.magazine, 'obj')?.which_number }}. {{ transformList(datas.magazine, 'obj')?.name }}</h5>
+                    <h5>{{ transformList(datas.magazine, 'obj')?.which_number }}. {{ transformList(datas.magazine,
+                        'obj')?.name }}</h5>
                     <div class="table" v-for="(category, index) in transformList(datas).categories" :key="index">
                         {{ category.name }}
                         <table v-if="category.articles.length > 0">
                             <tr>
                                 <th>Maqola nomi</th>
                                 <th>Muallif FISH</th>
+                                <th>Yuklab olish</th>
                             </tr>
                             <tr v-for="(article, index) in transformList(category.articles)" :key="index">
                                 <td>{{ article.name }}</td>
                                 <td>{{ article.author.name }}</td>
+                                <td>
+                                    <a :href="article.upload_file" download>
+                                        <button class="btn_download">Yuklab olish</button>
+                                    </a>
+                                    <br>
+                                    <a :href="article.upload_file" target="_blank">
+                                        <button class="btn_view">Ochib ko'rish</button>
+                                    </a>
+                                </td>
                             </tr>
                         </table>
                     </div>

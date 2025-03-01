@@ -7,6 +7,21 @@
 
 // #00add7  bg-ochroq ko'k
 
+.btn_download{
+    border: none;
+    background-color: #0099ff;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+.btn_view{
+    border: none;
+    background-color: #00d35b;
+    padding: 5px 10px;
+    color: #fff;
+    border-radius: 5px;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -262,7 +277,7 @@
             text-align: center;
             color: #1a2537;
             font-style: italic;
-            font-size: 22px;
+            font-size: 16px;
         }
 
         & .table {

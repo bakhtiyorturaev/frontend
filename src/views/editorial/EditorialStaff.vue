@@ -2,7 +2,7 @@
     <div>
         <div class="main">
             <h2 class="main-title">
-                Tahririyat a'zolari
+                {{ $t("tahririyat_azolari") }}
             </h2>
             <div class="main-basic" v-if="members.length > 0">
                 <div v-for="(item, index) in members" :key="index">

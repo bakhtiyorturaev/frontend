@@ -2,7 +2,7 @@
     <div>
         <div class="main">
             <h2 class="main-title">
-                Maqola tayyorlash bo'yicha yo'riqnoma
+                {{ $t("yoriqnoma") }}
             </h2>
             <div v-if="datas.length > 0">
                 <div class="main-member" v-for="(item, index) in transformList(datas)" :key="index">

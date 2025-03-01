@@ -2,7 +2,7 @@
     <div>
         <div class="main">
             <h2 class="main-title">
-                Statistika
+                {{ $t("statistics") }}
             </h2>
             <h2 class="main-title">
                 Jurnalning sonlari bo‘yicha maqolalar

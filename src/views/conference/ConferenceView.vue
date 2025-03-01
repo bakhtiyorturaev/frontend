@@ -2,7 +2,7 @@
     <div>
         <div class="main">
             <h2 class="main-title">
-                Konferensiya
+                {{ $t("conference") }}
             </h2>
             <div v-if="datas.length > 0">
                 <div class="main-basic" v-for="(item, index) in datas" :key="index">

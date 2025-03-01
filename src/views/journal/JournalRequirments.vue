@@ -1,7 +1,7 @@
 <template>
   <div>
     <div class="main">
-      <h2 class="main-title">Jurnal talablari</h2>
+      <h2 class="main-title">{{ $t("journal_talablari") }}</h2>
       <div class="main-basic" v-for="(item, index) in transformList(datas)" :key="index">
         <h5>{{ item.title }}</h5>
         <p v-html="item.content"></p>

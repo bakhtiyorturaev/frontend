@@ -20,9 +20,8 @@
                                 <td>{{ article.name }}</td>
                                 <td>{{ article.author.name }}</td>
                                 <td>
-                                    <a :href="article.upload_file" download>
-                                        <button class="btn_download">Yuklab olish</button>
-                                    </a>
+                                    <button @click="downloadFile(article.upload_file)" class="btn_download">Yuklab
+                                        olish</button>
                                     <br>
                                     <a :href="article.upload_file" target="_blank">
                                         <button class="btn_view">Ochib ko'rish</button>
@@ -50,6 +49,15 @@ export default {
         this.getOrders();
     },
     methods: {
+        downloadFile(upload_file) {
+            const link = document.createElement("a");
+            link.href = upload_file;
+            link.setAttribute("download", ""); // Fayl yuklab olish uchun
+            link.style.display = "none";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        },
         transformList(data, type = "array") {
             const locale = localStorage.getItem("locale") || "uz";
             const transformObject = (obj) => {

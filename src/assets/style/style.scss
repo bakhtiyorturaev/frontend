@@ -5,6 +5,8 @@
     font-family: sans-serif;
 }
 
+// #00add7  bg-ochroq ko'k
+
 ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -138,7 +140,7 @@
 }
 
 .main {
-    padding-left: 340px;
+    padding-left: 370px;
     padding-top: 10vh;
     padding-bottom: 50px;
 
@@ -236,7 +238,10 @@
         & img {
             width: 300px;
             margin: auto;
+            height: auto;
             text-align: center;
+            padding-bottom: 0;
+            margin-bottom: 0;
         }
 
         & ul li {

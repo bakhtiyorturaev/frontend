@@ -121,7 +121,7 @@
 }
 
 .main {
-  padding-left: 340px;
+  padding-left: 370px;
   padding-top: 10vh;
   padding-bottom: 50px;
 }
@@ -208,7 +208,10 @@
 .main-basic img {
   width: 300px;
   margin: auto;
+  height: auto;
   text-align: center;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 .main-basic ul li {
   list-style: none;

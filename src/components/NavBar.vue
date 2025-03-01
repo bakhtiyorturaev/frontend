@@ -9,7 +9,7 @@
       <div class="nav-items">
         <router-link active-class="active-class" to="/conference">{{ $t("conference") }}</router-link>
         <router-link active-class="active-class" to="/">{{ $t("home_page") }}</router-link>
-        <router-link active-class="active-class" to="/">{{ $t("ilmiy_school") }}</router-link>
+        <router-link active-class="active-class" to="/ilmiy/schools">{{ $t("ilmiy_school") }}</router-link>
         <router-link active-class="active-class" to="/">{{ $t("contact") }}</router-link>
         <select name="lang" id="" @change="changeLang" v-model="lang">
           <option value="uz">UZ</option>
@@ -18,8 +18,6 @@
         </select>
       </div>
     </nav>
-
-
 
     <div class="header">
       <p class="header-title">{{ $t("journal") }}</p>
@@ -31,9 +29,9 @@
       <p class="header-title">{{ $t("mualliflarga") }}</p>
       <router-link to="/make/document" active-class="active-class-header">{{ $t("yoriqnoma") }}</router-link>
       <router-link to="/simple/document" active-class="active-class-header">{{ $t("namunaviy_hujjatlar")
-        }}</router-link>
+      }}</router-link>
       <router-link to="/copyright/document" active-class="active-class-header">{{ $t("mualliflik_huquqi")
-        }}</router-link>
+      }}</router-link>
       <p class="header-title">{{ $t("tahririyat") }}</p>
       <!--<router-link to="/guide" active-class="active-class-header">{{ $t("tahririyat_rahbariyati") }}</router-link>-->
       <router-link to="/staff" active-class="active-class-header">{{ $t("tahririyat_azolari") }}</router-link>

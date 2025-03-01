@@ -9,7 +9,9 @@
             </pre>
             <div>
                 <div class="main-basic" v-for="(item, index) in datas.results" :key="index">
-                    <h5 v-html="item.content_uz"></h5>
+                    <a :href="datas.results.id">
+                        <h5 v-html="item.content_uz"></h5>
+                    </a>
                 </div>
             </div>
         </div>

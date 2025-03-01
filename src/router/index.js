@@ -71,6 +71,11 @@ const routes = [
     name: 'conference',
     component: () => import('../views/conference/ConferenceView.vue')
   },
+  {
+    path: '/ilmiy/schools',
+    name: 'ilmiy_schools',
+    component: () => import('../views/ilmiy/IlmiyMaktablarim.vue')
+  },
 ]
 
 const router = createRouter({

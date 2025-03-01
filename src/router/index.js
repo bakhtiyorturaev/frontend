@@ -76,6 +76,11 @@ const routes = [
     name: 'ilmiy_schools',
     component: () => import('../views/ilmiy/IlmiyMaktablarim.vue')
   },
+  {
+    path: '/by/magazine/:id',
+    name: 'by_magazine',
+    component: () => import('../views/journal/JournalByMagazine.vue')
+  },
 ]
 
 const router = createRouter({

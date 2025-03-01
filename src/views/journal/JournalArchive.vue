@@ -1,17 +1,20 @@
 <template>
     <div>
         <div class="main">
-            <h2 class="main-title">
-                Arxiv
-            </h2>
-            <pre>
-                <!-- {{ datas.results }} -->
-            </pre>
             <div>
-                <div class="main-basic" v-for="(item, index) in transformList(datas.results)" :key="index">
-                    <a :href="datas.results.id">
-                        <h5 v-html="item.content"></h5>
-                    </a>
+                <div class="main-basic">
+                    <div class="table">
+                        <table>
+                            <tr>
+                                <th>{{ $t("archive") }}</th>
+                            </tr>
+                            <tr v-for="(item, index) in transformList(datas)" :key="index">
+                                <a :href="'by/magazine/' + item?.id">
+                                    <td>{{ item.which_number }} {{ item.name }}</td>
+                                </a>
+                            </tr>
+                        </table>
+                    </div>
                 </div>
             </div>
         </div>
@@ -50,7 +53,7 @@ export default {
         },
         async getOrders() {
             try {
-                const response = await axios.get("https://back.tift-fintech.uz/en-gb/jurnal/magazine-archives/");
+                const response = await axios.get("https://back.tift-fintech.uz/uz/magazine/");
 
                 this.datas = response.data;
             } catch (error) {

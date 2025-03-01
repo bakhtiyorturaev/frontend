@@ -5,10 +5,10 @@
                 Ilmiy maktablarimiz
             </h2>
             <div class="main-basic" v-if="datas.length > 0">
-                <div v-for="(item, index) in datas" :key="index">
+                <div v-for="(item, index) in transformList(datas)" :key="index">
                     <h3>{{ item.name }}</h3>
-                    <p v-html="item.academic_degree_uz"></p>
-                    <p v-html="item.haqida_uz"></p>
+                    <p v-html="item.academic_degree"></p>
+                    <p v-html="item.haqida"></p>
                 </div>
             </div>
             <div v-else id="main-basic">
@@ -31,6 +31,23 @@ export default {
         this.getOrders();
     },
     methods: {
+        transformList(data, type = "array") {
+            const locale = localStorage.getItem("locale") || "uz";
+            const transformObject = (obj) => {
+                let newObj = { ...obj };
+                Object.keys(obj).forEach(key => {
+                    if (key.endsWith("_uz") || key.endsWith("_ru") || key.endsWith("_en")) {
+                        const baseKey = key.slice(0, -3);
+                        if (!newObj[baseKey]) {
+                            newObj[baseKey] = obj[`${baseKey}_${locale}`] || obj[`${baseKey}_uz`];
+                        }
+                    }
+                }); return newObj;
+            };
+            if (type === "array" && Array.isArray(data)) return data.map(transformObject);
+            if (type === "obj" && typeof data === "object" && data !== null) return transformObject(data);
+            return data;
+        },
         async getOrders() {
             try {
                 const response = await axios.get("https://back.tift-fintech.uz/uz/ilmiy/ilmiy-maktablarim/");

@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="main">
-            <div class="main-basic" v-for="(item, index) in datas" :key="index">
+            <div class="main-basic" v-for="(item, index) in transformList(datas)" :key="index">
                 <h5>{{ item.magazine.name_uz }}</h5>
                 <a :href="item.file" target="_blank">Guvohnomani yuklab ko'rish</a>
                 <p v-html="item.bio_uz"></p>
@@ -23,6 +23,23 @@ export default {
         this.getOrders();
     },
     methods: {
+        transformList(data, type = "array") {
+            const locale = localStorage.getItem("locale") || "uz";
+            const transformObject = (obj) => {
+                let newObj = { ...obj };
+                Object.keys(obj).forEach(key => {
+                    if (key.endsWith("_uz") || key.endsWith("_ru") || key.endsWith("_en")) {
+                        const baseKey = key.slice(0, -3);
+                        if (!newObj[baseKey]) {
+                            newObj[baseKey] = obj[`${baseKey}_${locale}`] || obj[`${baseKey}_uz`];
+                        }
+                    }
+                }); return newObj;
+            };
+            if (type === "array" && Array.isArray(data)) return data.map(transformObject);
+            if (type === "obj" && typeof data === "object" && data !== null) return transformObject(data);
+            return data;
+        },
         async getOrders() {
             try {
                 const response = await axios.get("https://back.tift-fintech.uz/uz/jurnal/about-magazines");

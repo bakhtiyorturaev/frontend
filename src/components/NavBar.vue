@@ -35,9 +35,9 @@
       <p class="header-title">{{ $t("tahririyat") }}</p>
       <!--<router-link to="/guide" active-class="active-class-header">{{ $t("tahririyat_rahbariyati") }}</router-link>-->
       <router-link to="/staff" active-class="active-class-header">{{ $t("tahririyat_azolari") }}</router-link>
-      <router-link to="/staff/foreign" active-class="active-class-header">{{ $t("xorijiy_azolar") }}</router-link>
-      <router-link to="/honorary/foreign/editorial/members  " active-class="active-class-header">{{
-        $t("xorijiy_tahririyat_azolar") }}</router-link>
+      <!-- <router-link to="/staff/foreign" active-class="active-class-header">{{ $t("xorijiy_azolar") }}</router-link> -->
+      <!-- <router-link to="/honorary/foreign/editorial/members  " active-class="active-class-header">{{
+        $t("xorijiy_tahririyat_azolar") }}</router-link> -->
     </div>
 
     <div class="main">

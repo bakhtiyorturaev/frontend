@@ -23,11 +23,12 @@
       <p class="header-title">{{ $t("journal") }}</p>
       <router-link to="/journal/news" active-class="active-class-header">{{ $t("journal_news") }}</router-link>
       <router-link to="/about" active-class="active-class-header">{{ $t("journal_about") }}</router-link>
-      <router-link to="/requirments" active-class="active-class-header">{{ $t("journal_talablari") }}</router-link>
+      <!-- <router-link to="/requirments" active-class="active-class-header">{{ $t("journal_talablari") }}</router-link> -->
       <router-link to="/archive" active-class="active-class-header">{{ $t("archive") }}</router-link>
       <router-link to="/statistics" active-class="active-class-header">{{ $t("statistics") }}</router-link>
       <p class="header-title">{{ $t("mualliflarga") }}</p>
-      <router-link to="/make/document" active-class="active-class-header">{{ $t("yoriqnoma") }}</router-link>
+      <!-- <router-link to="/make/document" active-class="active-class-header">{{ $t("yoriqnoma") }}</router-link> -->
+      <router-link to="/make/document" active-class="active-class-header">{{ $t("journal_talablari") }}</router-link>
       <router-link to="/simple/document" active-class="active-class-header">{{ $t("namunaviy_hujjatlar")
       }}</router-link>
       <router-link to="/copyright/document" active-class="active-class-header">{{ $t("mualliflik_huquqi")

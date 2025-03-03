@@ -7,7 +7,7 @@
             <div v-if="datas.length > 0">
                 <div class="main-basic" v-for="(item, index) in transformList(datas)" :key="index">
                     <h5>{{ item.title }}</h5>
-                    <p>{{ item.content }}</p>
+                    <p v-html="item.content"></p>
                 </div>
             </div>
             <div v-else id="main-basic">
